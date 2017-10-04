@@ -124,17 +124,17 @@ button a {
   max-height: auto;
 }
 
-.leftsection  {
-    border: solid black 1px;
-    width: 100%;
-}
-
 .bloccontent h3  {
   padding-bottom: 8px;
-  border: solid green 1px;
 }
 
 .bloccontent p  {
   padding-bottom: 8px;
   font-size: 0.75rem;
+}
+
+test  {
+  border" solid orange 5px;
+  width: 100%;
+  height: auto;
 }
