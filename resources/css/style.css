@@ -1,5 +1,24 @@
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html  {
   font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1  {
@@ -12,10 +31,12 @@ h2  {
 
 p  {
   font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #A5A4A2;
 }
 
 h6 {
-  font-size: .5rem
+  font-size: .75rem
 }
 
 body  {
@@ -25,7 +46,7 @@ body  {
 
 .content  {
   width: 1000px;
-  border: dashed #4B4B4B 0.5px;
+  border: solid hsl(0, 0%, 92%) 0.25px;
 }
 
 header  {
@@ -67,6 +88,10 @@ header  {
   background-color: #D7D7D7;
 }
 
+.darker  {
+  color: #6A6A6A
+}
+
 .bannerdisplay  {
   display: flex;
   justify-content: center;
@@ -79,19 +104,19 @@ header  {
   justify-content: space-between;
 }
 
-.section2details  {
+.details  {
   margin-left: 1.5rem;
   width: 75%;
 }
 
-.section2details h2  {
+.details h2  {
   padding-bottom: 1.5rem;
 }
 
-.section2details h6  {
+.details h6  {
   display: inline-block;
   position: relative;
-  top: 5rem;
+  top: 2rem;
   font-weight: 600;
 }
 
@@ -99,7 +124,7 @@ header  {
   width: 100%;
 }
 
-.bannerdetails h1, h3  {
+.bannerdetail h1, h3  {
   font-weight: 600;
   color: #4B4B4B;
   padding-bottom: 1.5rem;
@@ -131,11 +156,11 @@ header  {
 
 button  {
   width: 70%;
+  padding: 0.5rem;
   background-color: #4B4B4B;
 }
 
 button a {
-  padding: 0.5rem;
   text-decoration: none;
   color: white;
 }
@@ -213,10 +238,39 @@ button a {
 .thesisbox h2  {
   text-align: center;
   padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+.lineup  {
+  margin-top: 1rem;
 }
 
 video  {
-  width: 95%;
+  width: 90%;
   height: auto;
   padding: 2rem 1.5rem;
+}
+
+#headleft  {
+  text-align: left;
+}
+
+#urbandetails  {
+  padding-bottom: 2rem;
+}
+
+hr  {
+  width: 95%;
+}
+
+footer  {
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0 1rem;
 }
