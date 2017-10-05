@@ -10,6 +10,14 @@ h2  {
   font-size: 1.5rem;
 }
 
+p  {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: .5rem
+}
+
 body  {
   display: flex;
   justify-content: center;
@@ -65,17 +73,33 @@ header  {
   align-items: center
 }
 
-.section2  {
+.section2,
+.section4  {
   display: flex;
   justify-content: space-between;
 }
 
-.headings  {
-  width: 100%;
-  border: solid orange 5px;
+.section2details  {
+  margin-left: 1.5rem;
+  width: 75%;
 }
 
-.headings h1, h3  {
+.section2details h2  {
+  padding-bottom: 1.5rem;
+}
+
+.section2details h6  {
+  display: inline-block;
+  position: relative;
+  top: 5rem;
+  font-weight: 600;
+}
+
+.bannerdetails  {
+  width: 100%;
+}
+
+.bannerdetails h1, h3  {
   font-weight: 600;
   color: #4B4B4B;
   padding-bottom: 1.5rem;
@@ -92,7 +116,6 @@ header  {
   background-image: url(file:///C:/Users/smithr/Documents/Projects/capstone_colmar_project/resources/images/banner.jpg);
   height: 425px;
   width: 60%;
-  border: solid black 3px;
 }
 
 .picurl2  {
@@ -102,7 +125,7 @@ header  {
   width: 100%;
 }
 
-.headings  {
+.bannerdetail  {
   width: 40%;
 }
 
@@ -121,7 +144,7 @@ button a {
   max-width: 60%;
 }
 
-.tribloc  {
+.rightbloc  {
   margin-top: 1rem;
   width: 40%;
 }
@@ -135,7 +158,7 @@ button a {
 .smallpic  {
   width: 35%;
   height: auto;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .smallpic img  {
@@ -149,7 +172,6 @@ button a {
 
 .bloccontent p  {
   padding-bottom: 8px;
-  font-size: 0.75rem;
 }
 
 .learnbox  {
@@ -161,7 +183,6 @@ button a {
 .section3  {
   margin: 2rem 3.5rem;
   padding-bottom: 1rem;
-  border: solid orange 2px;
 }
 
 .section3 h1  {
@@ -187,4 +208,15 @@ button a {
 
 .learndetail  {
   padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.thesisbox h2  {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+video  {
+  width: 95%;
+  height: auto;
+  padding: 2rem 1.5rem;
 }
