@@ -16,6 +16,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGHZhYM0_6AejPZE-OqA592o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html  {
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -124,6 +133,11 @@ header  {
 .section4  {
   display: flex;
   justify-content: space-between;
+  border: solid hsl(0, 0%, 92%) 0.25px;
+}
+
+.leftvideo  {
+  max-width: 60%;
 }
 
 .details  {
@@ -222,6 +236,11 @@ button a {
   padding-bottom: 8px;
 }
 
+.bloccontent a {
+  color: blue;
+  text-decoration: none;
+}
+
 .learnbox  {
   height: auto;
   width: 100%
@@ -231,6 +250,7 @@ button a {
 .section3  {
   margin: 2rem 3.5rem;
   padding-bottom: 1rem;
+  border: solid hsl(0, 0%, 92%) 0.25px;
 }
 
 .section3 h1  {
@@ -301,6 +321,7 @@ footer a {
 @media screen and (max-width: 1020px)  {
   .bannerdisplay  {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
   .defaultpic  {
@@ -311,5 +332,151 @@ footer a {
     width: 100%;
     height: 200px;
   }
+  .bannerdetail  {
+    margin: 0 1rem;
+    width: 95%;
+  }
+  .bannerdetail h1, h2  {
+    font-weight: 900;
+  }
 
+  .bannerdetail h1  {
+    margin: 2rem 0;
+  }
+
+  .btn  {
+    text-align: center;
+  }
+
+  button  {
+    width: 90%;
+    background-color: #A0A0A0;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
 }
+
+@media screen and (max-width: 985px)  {
+  .leftimage  {
+    display: none;
+  }
+  .section2  {
+    display: flex;
+    justify-content: center;
+  }
+  .bloc  {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0rem 1rem 4rem 1rem;
+  }
+
+  .bloc:nth-child(1n+3)  {
+    background-color: white;
+  }
+
+  .rightbloc  {
+    width: 100%;
+  }
+
+  .smallpic  {
+    display: none;
+  }
+
+  .mobilepic img  {
+    max-width: 100%;
+  }
+
+  .bloccontent h3  {
+    font-size: 2rem;
+    color: #888888;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  .bloccontent p  {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 750px)  {
+  .mobilelearning  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px)  {
+  .section3  {
+    margin: 0 1rem;
+  }
+
+  .row1,
+  .row2  {
+    display: none;
+  }
+
+  .greyback  {
+    background-color: white;
+  }
+
+  .mobilelearning  {
+    border: solid orange 3px;
+  }
+
+  .mobilelearning li {
+    align-content: center;
+    background-color: #D7D7D7;
+    margin-bottom: 8px;
+  }
+
+  .mobilelearning h3  {
+    padding: 1rem 1rem 1.5rem 2rem;
+  }
+
+  .mobilelearning li:last-child  {
+    margin-bottom: 0;
+  }
+
+  .break  {
+    display: none;
+  }
+
+  .section3  {
+    padding-bottom: 2rem;
+  }
+
+  .section4  {
+    display: flex;
+    justify-content: space-around;
+    border: solid yellow 4px;
+  }
+
+  .thesisbox  {
+    border: solid green 5px;
+  }
+
+  .thesisbox h2  {
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+  }
+
+  .details  {
+    display: none;
+  }
+
+  .fismadetails  {
+    display: none;
+  }
+
+  .leftvideo video  {
+    width: 225px;
+    height: 200px;
+    border: solid orange 4px;
+  }
+
+
+  @media screen and (min-width: 985px)  {
+  .mobilepic  {
+    display: none;
+  }
