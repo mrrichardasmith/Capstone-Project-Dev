@@ -80,12 +80,6 @@ header  {
   }
 }
 
-  @media screen and (min-width: 700px)  {
-    header .collapse  {
-      display: none;
-    }
-  }
-
 .logo  {
   display: flex;
   align-items: center;
@@ -150,10 +144,10 @@ header  {
 }
 
 .details h6  {
-  display: inline-block;
+  display: block;
+  font-weight: 600;
   position: relative;
   top: 2rem;
-  font-weight: 600;
 }
 
 .bannerdetails  {
@@ -228,6 +222,10 @@ button a {
   max-height: auto;
 }
 
+.mobilepic  {
+  display: none;
+}
+
 .bloccontent h3  {
   padding-bottom: 8px;
 }
@@ -284,6 +282,17 @@ button a {
   font-weight: 600;
 }
 
+.fismapic  {
+  width: 35%;
+  height: auto;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.fismapic img  {
+  max-width: 100%;
+  max-height: auto;
+}
+
 .lineup  {
   margin-top: 1rem;
 }
@@ -293,6 +302,12 @@ video  {
   height: auto;
   padding: 2rem 1.5rem;
 }
+
+.mobilevideo  {
+  display: none;
+}
+
+
 
 #headleft  {
   text-align: left;
@@ -356,6 +371,7 @@ footer a {
   }
 }
 
+
 @media screen and (max-width: 985px)  {
   .leftimage  {
     display: none;
@@ -383,6 +399,10 @@ footer a {
     display: none;
   }
 
+  .mobilepic  {
+    display: block;
+  }
+
   .mobilepic img  {
     max-width: 100%;
   }
@@ -397,11 +417,13 @@ footer a {
     font-size: 1.25rem;
     line-height: 2rem;
   }
-}
 
-@media screen and (min-width: 750px)  {
-  .mobilelearning  {
+  .section4  {
     display: none;
+  }
+
+  .mobilevideo  {
+    display: block;
   }
 }
 
@@ -445,38 +467,23 @@ footer a {
     padding-bottom: 2rem;
   }
 
-  .section4  {
-    display: flex;
-    justify-content: space-around;
-    border: solid yellow 4px;
-  }
-
-  .thesisbox  {
-    border: solid green 5px;
-  }
-
   .thesisbox h2  {
     font-weight: 900;
     font-size: 2rem;
     padding: 2rem 0 1rem 0;
   }
 
-  .details  {
-    display: none;
+}
+
+
+  @media screen and (min-width: 750px)  {
+    .mobilelearning  {
+      display: none;
+    }
   }
 
-  .fismadetails  {
-    display: none;
-  }
-
-  .leftvideo video  {
-    width: 225px;
-    height: 200px;
-    border: solid orange 4px;
-  }
-
-
-  @media screen and (min-width: 985px)  {
-  .mobilepic  {
-    display: none;
+  @media screen and (min-width: 700px)  {
+    header .collapse  {
+      display: none;
+    }
   }
