@@ -237,6 +237,13 @@ button a {
 .bloccontent a {
   color: blue;
   text-decoration: none;
+  transition: color 750ms ease-out 100ms,
+              font-size 750ms linear 100ms;
+}
+
+.bloccontent a:hover  {
+  color: green;
+  font-size: 1.25rem;
 }
 
 .learnbox  {
@@ -248,7 +255,8 @@ button a {
 .section3  {
   margin: 2rem 3.5rem;
   padding-bottom: 1rem;
-  border: solid hsl(0, 0%, 92%) 0.25px;
+  
+
 }
 
 .section3 h1  {
@@ -368,6 +376,11 @@ footer a {
     background-color: #A0A0A0;
     font-weight: 600;
     margin-bottom: 2rem;
+    transition: background-color 750ms ease-out 300ms;
+  }
+
+  button:hover  {
+    background-color: rgba(250, 169, 82, 0.7);
   }
 }
 
@@ -425,6 +438,7 @@ footer a {
   .mobilevideo  {
     display: block;
   }
+
 }
 
 @media screen and (max-width: 750px)  {
@@ -441,14 +455,15 @@ footer a {
     background-color: white;
   }
 
-  .mobilelearning  {
-    border: solid orange 3px;
-  }
-
   .mobilelearning li {
     align-content: center;
     background-color: #D7D7D7;
     margin-bottom: 8px;
+    transition: background-color 500ms ease-in 200ms;
+  }
+
+  .mobilelearning li:hover  {
+    background-color: rgba(250, 169, 82, 0.7)	;
   }
 
   .mobilelearning h3  {
@@ -471,6 +486,10 @@ footer a {
     font-weight: 900;
     font-size: 2rem;
     padding: 2rem 0 1rem 0;
+  }
+
+  .terms  {
+    display: none;
   }
 
 }
