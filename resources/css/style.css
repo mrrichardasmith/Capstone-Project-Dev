@@ -169,14 +169,14 @@ header  {
 }
 
 .picurl1  {
-  background-image: url(file:///C:/Users/smithr/Documents/Projects/capstone_colmar_project/resources/images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   height: 425px;
   width: 60%;
 }
 
 .picurl2  {
   background-size: contain;
-  background-image: url(file:///C:/Users/smithr/Documents/Projects/capstone_colmar_project/resources/images/information-main.jpg);
+  background-image: url(../images/information-main.jpg);
   height: 300px;
   width: 100%;
 }
