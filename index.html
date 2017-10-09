@@ -4,12 +4,14 @@
     <title>Capstone Colnmar</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="content">
+      <!-- Header with mobile & Desktop Nav -->
       <header>
         <div class="logo">
-          <img src="./resources/images/ic-logo.svg">
+          <img src="./resources/images/ic-logo.svg" alt="logo">
           <span class="companyname"><span>Colmar</span> Academy</span>
         </div>
         <nav class="main">
@@ -19,30 +21,32 @@
           <span>Sign in</span>
         </nav>
         <nav class="collapse">
-          <span><a href="#"><img src="./resources/images/ic-logo.svg"></a></span>
-          <span><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></span>
-          <span><a href="#"><img src="./resources/images/ic-online.svg"></a></span>
-          <span><a href="#"><img src="./resources/images/ic-login.svg"></a></span>
+          <span><a role="link" href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a></span>
+          <span><a role="link" href="#"><img src="./resources/images/ic-on-campus.svg" alt="Campus Icon"></a></span>
+          <span><a role="link" href="#"><img src="./resources/images/ic-online.svg"></a></span>
+          <span><a role="link" href="#"><img src="./resources/images/ic-login.svg"></a></span>
         </nav>
       </header>
+      <!-- Bannerbox with immediate call to action -->
         <div class="bannerbox greyback">
           <div class="bannerdisplay">
-            <div class="defaultpic picurl1">
+            <div class="defaultpic picurl1" alt="Banner Image students at a table">
               <!--Image passed from CSS -->
             </div>
             <div class="bannerdetail">
-              <h1>Learn something </br> new everyday</h1>
+              <h1 role="heading">Learn something </br> new everyday</h1>
               <h3>Semper In Excretia Sumus Solim Profundum Varit</h3>
               <div class="btn">
-                <button><a href="#">Start Here</a></button>
+                <button role="button"><a href="#">Start Here</a></button>
               </div>
             </div>
           </div>
         </div>
+        <!-- Campus Information Section -->
         <div class="bannerbox">
           <div class="section2">
             <div class="leftimage">
-              <div class="defaultpic picurl2">
+              <div class="defaultpic picurl2" alt="Man Reading a book in the park">
                 <!--Image passed from CSS -->
               </div>
               <div class="details">
@@ -52,19 +56,19 @@
                   corned beef tongue. Tongue turducken pancetta pig. Short loin leberkas pork chop, drumstick brisket salami prosciutto.
                   Drumstick turkey capicola venison kielbasa
                 </p>
-                  <h6>Emanuel Sr Strategist at Hiring.com</h6>
+                  <h6 aria-label="Strategist">Emanuel Sr Strategist at Hiring.com</h6>
               </div>
             </div>
             <div class="rightbloc">
               <div class="bloc">
                 <div class="smallpic" id="notop">
-                  <img src="./resources/images/information-orientation.jpg">
+                  <img src="./resources/images/information-orientation.jpg" alt="Students walking down a path">
                 </div>
                 <div class="mobilepic">
-                  <img src="./resources/images/information-orientation-mobile.jpg">
+                  <img src="./resources/images/information-orientation-mobile.jpg" alt="Students walking down a path">
                 </div>
                 <div class="bloccontent">
-                  <h3>Orientation Date</h3>
+                  <h3 role="heading">Orientation Date</h3>
                   <p>
                     Tues 10/11 & Wed 10/12: 8am-3pm
                   </p>
@@ -73,13 +77,13 @@
               </div>
               <div class="bloc">
                 <div class="smallpic">
-                  <img src="./resources/images/information-campus.jpg">
+                  <img src="./resources/images/information-campus.jpg" alt="Modern Class Room">
                 </div>
                 <div class="mobilepic">
-                  <img src="./resources/images/information-campus-mobile.jpg">
+                  <img src="./resources/images/information-campus-mobile.jpg" alt="Modern Class Room">
                 </div>
                 <div class="bloccontent">
-                  <h3>Our Campus</h3>
+                  <h3 role="heading">Our Campus</h3>
                   <p>
                     Find which campus is close by you
                   </p>
@@ -88,13 +92,13 @@
               </div>
               <div class="bloc greyback">
                 <div class="smallpic">
-                  <img src="./resources/images/information-guest-lecture.jpg">
+                  <img src="./resources/images/information-guest-lecture.jpg" alt="Philisophical looking guest lecturer">
                 </div>
                 <div class="mobilepic">
-                  <img src="./resources/images/information-guest-lecture-mobile.jpg">
+                  <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Philisophical looking guest lecturer">
                 </div>
                 <div class="bloccontent">
-                  <h3>Our Guest Lecture</h3>
+                  <h3 role="heading">Our Guest Lecture</h3>
                   <p class="darker">
                     Join a keynote with Oliver sack <br class="break">
                     about music in medical treatment.
@@ -105,10 +109,11 @@
             </div>
           </div>
         </div>
+        <!-- Discplins Mobile and Desktop -->
         <div class="learnbox greyback">
           <div class="section3">
-            <h1>Start Learning</h1>
-            <ul class="mobilelearning">
+            <h1 role="heading">Start Learning</h1>
+            <ul role="presentation" class="mobilelearning">
               <li><h3>Software Engineering</h3></li>
               <li><h3>Computer Art</h3></li>
               <li><h3>Design</h3></li>
@@ -118,7 +123,7 @@
             </ul>
             <div class="row1">
               <div class="learnbloc">
-                <img src="./resources/images/course-software.jpg">
+                <img src="./resources/images/course-software.jpg" alt="Digital devices diplaying Course Software">
                 <div class="learndetail">
                   <h3>Software Engineering</h3>
                   <h4>Courses</h4>
@@ -126,7 +131,7 @@
                 </div>
               </div>
               <div class="learnbloc">
-                <img src="./resources/images/course-computer-art.jpg">
+                <img src="./resources/images/course-computer-art.jpg" alt="a hand holding a phone displaying visual in a hipster cafe">
                 <div class="learndetail">
                   <h3>Computer Art</h3>
                   <h4>Courses</h4>
@@ -137,7 +142,7 @@
                 </div>
               </div>
               <div class="learnbloc">
-                <img src="./resources/images/course-design.jpg">
+                <img src="./resources/images/course-design.jpg" alt="student carrying a retro slr camera">
                 <div class="learndetail">
                   <h3>Design</h3>
                   <h4>Courses</h4>
@@ -149,7 +154,7 @@
           </div>
           <div class="row2">
             <div class="learnbloc">
-              <img src="./resources/images/course-data.jpg">
+              <img src="./resources/images/course-data.jpg" alt="Laptop displaying graphical dashboard">
               <div class="learndetail">
                 <h3>Data</h3>
                 <h4>Courses</h4>
@@ -159,7 +164,7 @@
               </div>
             </div>
             <div class="learnbloc">
-              <img src="./resources/images/course-business.jpg">
+              <img src="./resources/images/course-business.jpg" alt="A modern character chess set">
               <div class="learndetail">
                 <h3>Business</h3>
                 <h4>Courses</h4>
@@ -169,7 +174,7 @@
               </div>
             </div>
             <div class="learnbloc">
-              <img src="./resources/images/course-marketing.jpg">
+              <img src="./resources/images/course-marketing.jpg" alt="a smart watch">
               <div class="learndetail">
                 <h3>Marketing</h3>
                 <h4>Courses</h4>
@@ -181,12 +186,13 @@
           </div>
         </div>
       </div>
+      <!-- Show case of student contributions -->
     <div class="thesisbox">
-      <h2>Thesis exhibit</h2>
+      <h2 role="heading">Thesis exhibit</h2>
       <div class="section4">
         <div class="leftvideo">
             <video controls>
-              <source src="./resources/videos/thesis.mp4" type="video/mp4">
+              <source src="./resources/videos/thesis.mp4" type="video/mp4" alt="A rendered art house style video of a high rise building">
             Your browser does not support the video tag.
             </video>
           <div class="details">
@@ -201,7 +207,7 @@
         <div class="rightbloc">
           <div class="bloc greyback lineup">
             <div class="fismapic">
-              <img src="./resources/images/thesis-fisma.jpg">
+              <img src="./resources/images/thesis-fisma.jpg" alt="A brain storming session using paper and digital methods">
             </div>
             <div class="bloccontent fismadetails">
               <h3>Fisma: Design and </br> Prototype</h3>
@@ -212,7 +218,7 @@
           </div>
           <div class="bloc">
             <div class="fismapic">
-              <img src="./resources/images/thesis-now-and-then.jpg">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="Cityscape">
             </div>
             <div class="bloccontent fismadetails">
               <h3>Now and then</h3>
@@ -225,7 +231,7 @@
       </div>
       <div class="mobilevideo">
         <video controls>
-          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+          <source src="./resources/videos/thesis.mp4" type="video/mp4" alt="A brain storming session using paper and digital methods">
         Your browser does not support the video tag.
         </video>
       </div>
@@ -236,8 +242,8 @@
         <span>&copy 2016 Colmar Academy. All rights reserved</span>
       </div>
       <div class="terms">
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
+        <a role="link" href="#">Terms</a>
+        <a role="link" href="#">Privacy</a>
       </div>
     </footer>
     </div>
